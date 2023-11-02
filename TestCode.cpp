@@ -2,11 +2,11 @@
 #include "GUI\Output.h"
 
 //This is a test code to test the Input and Output classes
-
+//Best team
 int main()
 {
 	int x,y;
-
+	int z;
 	//Create Input and Output objects to test
 	Output *pOut = new Output();
 	Input *pIn = pOut->CreateInput();
