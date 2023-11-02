@@ -6,7 +6,6 @@
 int main()
 {
 	int x,y;
-	int z;
 	//Create Input and Output objects to test
 	Output *pOut = new Output();
 	Input *pIn = pOut->CreateInput();
