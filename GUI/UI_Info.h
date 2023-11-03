@@ -20,9 +20,9 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_RECT,		//Recangle item in menu
 	
 	//TODO: Add more items names here
-
-	ITM_EXIT,		//Exit item
 	ITM_SAVEGRAPH,
+	ITM_LOADGRAPH,
+	ITM_EXIT,		//Exit item
 	DRAW_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
 	
 };

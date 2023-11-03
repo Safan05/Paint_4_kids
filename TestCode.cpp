@@ -2,11 +2,10 @@
 #include "GUI\Output.h"
 
 //This is a test code to test the Input and Output classes
-
+//Best team
 int main()
 {
 	int x,y;
-
 	//Create Input and Output objects to test
 	Output *pOut = new Output();
 	Input *pIn = pOut->CreateInput();
@@ -85,7 +84,16 @@ int main()
 	/// 2.2- Square Test ///
 	/// ============== 
 	pOut->PrintMessage("Drawing a Square, normal and Highlighted, Click to continue");
-	pIn->GetPointClicked(x,y);	//Wait for any click
+	pIn->GetPointClicked(P1.x, P1.y);
+	gfxInfo.BorderWdth = 6;
+	gfxInfo.DrawClr = BLUE;	//any color for border
+	gfxInfo.FillClr = GREEN;//any color for filling
+	gfxInfo.isFilled = true;//Figure is filled
+	pOut->DrawSQ(P1,gfxInfo, false);
+	//******************************************************
+	pOut->PrintMessage("Drawing a Square ==> Highlighted non-filled, Click to Highlight");
+	pIn->GetPointClicked(x, y);	//Wait for any click
+	pOut->DrawSQ(P1, gfxInfo, true);
 
 	///TODO: Add code to draw Square, Normal and Highlighted
 
@@ -166,6 +174,10 @@ int main()
 
 		case Save_graph:
 			pOut->PrintMessage("Action: Save a graph , Click anywhere");
+			break;
+
+		case load_graph:
+			pOut->PrintMessage("Action: load a graph , Click anywhere");
 			break;
 
 		case STATUS:

@@ -1,21 +1,15 @@
 #include "Output.h"
-
-
 Output::Output()
 {
 	//Initialize user interface parameters
 	UI.InterfaceMode = MODE_DRAW;
-	
 	UI.width = 1250;
 	UI.height = 650;
 	UI.wx = 5;
 	UI.wy =5;
-
-	
 	UI.StatusBarHeight = 50;
 	UI.ToolBarHeight = 50;
 	UI.MenuItemWidth = 80;
-	
 	UI.DrawColor = BLUE;	//Drawing color
 	UI.FillColor = GREEN;	//Filling color
 	UI.MsgColor = RED;		//Messages color
@@ -23,8 +17,6 @@ Output::Output()
 	UI.HighlightColor = MAGENTA;	//This color should NOT be used to draw figures. use if for highlight only
 	UI.StatusBarColor = TURQUOISE;
 	UI.PenWidth = 3;	//width of the figures frames
-
-	
 	//Create the output window
 	pWind = CreateWind(UI.width, UI.height, UI.wx, UI.wy);
 	//Change the title
@@ -82,7 +74,8 @@ void Output::CreateDrawToolBar() const
 	string MenuItemImages[DRAW_ITM_COUNT];
 	MenuItemImages[ITM_RECT] = "images\\MenuItems\\Menu_Rect.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\Menu_Exit.jpg";
-	MenuItemImages[ITM_SAVEGRAPH] = "images\\MenuItems\\Save_graph.jpg";
+	MenuItemImages[ITM_SAVEGRAPH] = "images\\MenuItems\\Save_graph.jpg"; 
+		MenuItemImages[ITM_LOADGRAPH] = "images\\MenuItems\\load.jpg";
 	//TODO: Prepare images for each menu item and add it to the list
 
 	//Draw menu item one image at a time
@@ -161,8 +154,26 @@ void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) co
 	pWind->DrawRectangle(P1.x, P1.y, P2.x, P2.y, style);
 	
 }
+void Output::DrawSQ(Point P1, GfxInfo RectGfxInfo, bool selected) const
+{
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
+	else
+		DrawingClr = RectGfxInfo.DrawClr;
 
+	pWind->SetPen(DrawingClr, 1);
+	drawstyle style;
+	if (RectGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(RectGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
 
+	pWind->DrawRectangle(P1.x-50, P1.y-50, P1.x+50, P1.y+50, style);
+}
 //////////////////////////////////////////////////////////////////////////////////////////
 Output::~Output()
 {
