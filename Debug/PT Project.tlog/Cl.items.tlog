@@ -1,39 +1,39 @@
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\auxil.cpp;D:\Computer department\Phase1 - Code F22\Debug\auxil.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.cpp;D:\Computer department\Phase1 - Code F22\Debug\CMUgraphics.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\colors.cpp;D:\Computer department\Phase1 - Code F22\Debug\colors.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\image.cpp;D:\Computer department\Phase1 - Code F22\Debug\image.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpegload.c;D:\Computer department\Phase1 - Code F22\Debug\jpegload.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\keyqueue.cpp;D:\Computer department\Phase1 - Code F22\Debug\keyqueue.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\mousequeue.cpp;D:\Computer department\Phase1 - Code F22\Debug\mousequeue.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\windowinput.cpp;D:\Computer department\Phase1 - Code F22\Debug\windowinput.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jcomapi.c;D:\Computer department\Phase1 - Code F22\Debug\jcomapi.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jcparam.c;D:\Computer department\Phase1 - Code F22\Debug\jcparam.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdapimin.c;D:\Computer department\Phase1 - Code F22\Debug\jdapimin.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdapistd.c;D:\Computer department\Phase1 - Code F22\Debug\jdapistd.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdatasrc.c;D:\Computer department\Phase1 - Code F22\Debug\jdatasrc.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdcoefct.c;D:\Computer department\Phase1 - Code F22\Debug\jdcoefct.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdcolor.c;D:\Computer department\Phase1 - Code F22\Debug\jdcolor.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jddctmgr.c;D:\Computer department\Phase1 - Code F22\Debug\jddctmgr.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdhuff.c;D:\Computer department\Phase1 - Code F22\Debug\jdhuff.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdinput.c;D:\Computer department\Phase1 - Code F22\Debug\jdinput.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdmainct.c;D:\Computer department\Phase1 - Code F22\Debug\jdmainct.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdmarker.c;D:\Computer department\Phase1 - Code F22\Debug\jdmarker.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdmaster.c;D:\Computer department\Phase1 - Code F22\Debug\jdmaster.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdmerge.c;D:\Computer department\Phase1 - Code F22\Debug\jdmerge.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdphuff.c;D:\Computer department\Phase1 - Code F22\Debug\jdphuff.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdpostct.c;D:\Computer department\Phase1 - Code F22\Debug\jdpostct.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdsample.c;D:\Computer department\Phase1 - Code F22\Debug\jdsample.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jdtrans.c;D:\Computer department\Phase1 - Code F22\Debug\jdtrans.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jerror.c;D:\Computer department\Phase1 - Code F22\Debug\jerror.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jidctflt.c;D:\Computer department\Phase1 - Code F22\Debug\jidctflt.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jidctfst.c;D:\Computer department\Phase1 - Code F22\Debug\jidctfst.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jidctint.c;D:\Computer department\Phase1 - Code F22\Debug\jidctint.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jidctred.c;D:\Computer department\Phase1 - Code F22\Debug\jidctred.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jmemmgr.c;D:\Computer department\Phase1 - Code F22\Debug\jmemmgr.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jmemnobs.c;D:\Computer department\Phase1 - Code F22\Debug\jmemnobs.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jquant1.c;D:\Computer department\Phase1 - Code F22\Debug\jquant1.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jquant2.c;D:\Computer department\Phase1 - Code F22\Debug\jquant2.obj
-D:\Computer department\Phase1 - Code F22\CMUgraphicsLib\jpeg\jutils.c;D:\Computer department\Phase1 - Code F22\Debug\jutils.obj
-D:\Computer department\Phase1 - Code F22\GUI\Input.cpp;D:\Computer department\Phase1 - Code F22\Debug\Input.obj
-D:\Computer department\Phase1 - Code F22\GUI\Output.cpp;D:\Computer department\Phase1 - Code F22\Debug\Output.obj
-D:\Computer department\Phase1 - Code F22\TestCode.cpp;D:\Computer department\Phase1 - Code F22\Debug\TestCode.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\auxil.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\auxil.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\CMUgraphics.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\CMUgraphics.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\colors.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\colors.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\image.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\image.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpegload.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jpegload.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\keyqueue.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\keyqueue.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\mousequeue.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\mousequeue.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\windowinput.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\windowinput.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jcomapi.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jcomapi.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jcparam.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jcparam.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdapimin.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdapimin.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdapistd.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdapistd.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdatasrc.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdatasrc.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdcoefct.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdcoefct.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdcolor.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdcolor.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jddctmgr.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jddctmgr.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdhuff.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdhuff.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdinput.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdinput.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdmainct.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdmainct.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdmarker.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdmarker.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdmaster.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdmaster.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdmerge.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdmerge.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdphuff.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdphuff.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdpostct.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdpostct.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdsample.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdsample.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdtrans.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdtrans.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jerror.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jerror.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jidctflt.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jidctflt.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jidctfst.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jidctfst.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jidctint.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jidctint.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jidctred.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jidctred.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jmemmgr.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jmemmgr.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jmemnobs.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jmemnobs.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jquant1.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jquant1.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jquant2.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jquant2.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jutils.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jutils.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\GUI\Input.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\Input.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\GUI\Output.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\Output.obj
+C:\Users\Shireen Mostafa\Desktop\PPP\TestCode.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\TestCode.obj

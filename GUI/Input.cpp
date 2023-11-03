@@ -53,7 +53,7 @@ ActionType Input::GetUserAction() const
 			{
 			case ITM_RECT: return DRAW_RECT;
 			case ITM_EXIT: return EXIT;	
-			
+			case ITM_SAVEGRAPH: return Save_graph;
 			default: return EMPTY;	//A click on empty place in desgin toolbar
 			}
 		}

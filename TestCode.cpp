@@ -164,6 +164,10 @@ int main()
 				pOut->PrintMessage("Action: Draw a Rectangle , Click anywhere");
 				break;
 
+		case Save_graph:
+			pOut->PrintMessage("Action: Save a graph , Click anywhere");
+			break;
+
 		case STATUS:
 				pOut->PrintMessage("Action: a click on the Status Bar, Click anywhere");
 				break;
