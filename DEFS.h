@@ -10,6 +10,9 @@ enum ActionType //The actions supported (you can add more if needed)
 	Save_graph,
 	load_graph,
 	EXIT,			//Exit
+	Start_Rec,
+	Stop_Rec,
+	Play_Rec,
 	TO_DRAW,		//Switch interface to Draw mode
 	TO_PLAY,		//Switch interface to Play mode
 	EMPTY,			//A click on empty place in the toolbar

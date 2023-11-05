@@ -1,39 +1,39 @@
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\auxil.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\auxil.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\CMUgraphics.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\CMUgraphics.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\colors.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\colors.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\image.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\image.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpegload.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jpegload.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\keyqueue.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\keyqueue.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\mousequeue.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\mousequeue.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\windowinput.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\windowinput.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jcomapi.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jcomapi.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jcparam.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jcparam.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdapimin.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdapimin.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdapistd.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdapistd.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdatasrc.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdatasrc.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdcoefct.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdcoefct.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdcolor.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdcolor.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jddctmgr.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jddctmgr.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdhuff.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdhuff.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdinput.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdinput.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdmainct.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdmainct.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdmarker.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdmarker.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdmaster.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdmaster.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdmerge.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdmerge.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdphuff.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdphuff.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdpostct.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdpostct.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdsample.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdsample.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jdtrans.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jdtrans.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jerror.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jerror.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jidctflt.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jidctflt.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jidctfst.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jidctfst.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jidctint.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jidctint.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jidctred.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jidctred.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jmemmgr.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jmemmgr.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jmemnobs.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jmemnobs.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jquant1.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jquant1.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jquant2.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jquant2.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\CMUgraphicsLib\jpeg\jutils.c;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\jutils.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\GUI\Input.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\Input.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\GUI\Output.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\Output.obj
-C:\Users\Shireen Mostafa\Desktop\PPP\TestCode.cpp;C:\Users\Shireen Mostafa\Desktop\PPP\Debug\TestCode.obj
+D:\studfy\programming\project\CMUgraphicsLib\auxil.cpp;D:\studfy\programming\project\Debug\auxil.obj
+D:\studfy\programming\project\CMUgraphicsLib\CMUgraphics.cpp;D:\studfy\programming\project\Debug\CMUgraphics.obj
+D:\studfy\programming\project\CMUgraphicsLib\colors.cpp;D:\studfy\programming\project\Debug\colors.obj
+D:\studfy\programming\project\CMUgraphicsLib\image.cpp;D:\studfy\programming\project\Debug\image.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpegload.c;D:\studfy\programming\project\Debug\jpegload.obj
+D:\studfy\programming\project\CMUgraphicsLib\keyqueue.cpp;D:\studfy\programming\project\Debug\keyqueue.obj
+D:\studfy\programming\project\CMUgraphicsLib\mousequeue.cpp;D:\studfy\programming\project\Debug\mousequeue.obj
+D:\studfy\programming\project\CMUgraphicsLib\windowinput.cpp;D:\studfy\programming\project\Debug\windowinput.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jcomapi.c;D:\studfy\programming\project\Debug\jcomapi.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jcparam.c;D:\studfy\programming\project\Debug\jcparam.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdapimin.c;D:\studfy\programming\project\Debug\jdapimin.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdapistd.c;D:\studfy\programming\project\Debug\jdapistd.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdatasrc.c;D:\studfy\programming\project\Debug\jdatasrc.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdcoefct.c;D:\studfy\programming\project\Debug\jdcoefct.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdcolor.c;D:\studfy\programming\project\Debug\jdcolor.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jddctmgr.c;D:\studfy\programming\project\Debug\jddctmgr.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdhuff.c;D:\studfy\programming\project\Debug\jdhuff.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdinput.c;D:\studfy\programming\project\Debug\jdinput.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdmainct.c;D:\studfy\programming\project\Debug\jdmainct.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdmarker.c;D:\studfy\programming\project\Debug\jdmarker.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdmaster.c;D:\studfy\programming\project\Debug\jdmaster.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdmerge.c;D:\studfy\programming\project\Debug\jdmerge.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdphuff.c;D:\studfy\programming\project\Debug\jdphuff.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdpostct.c;D:\studfy\programming\project\Debug\jdpostct.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdsample.c;D:\studfy\programming\project\Debug\jdsample.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jdtrans.c;D:\studfy\programming\project\Debug\jdtrans.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jerror.c;D:\studfy\programming\project\Debug\jerror.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jidctflt.c;D:\studfy\programming\project\Debug\jidctflt.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jidctfst.c;D:\studfy\programming\project\Debug\jidctfst.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jidctint.c;D:\studfy\programming\project\Debug\jidctint.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jidctred.c;D:\studfy\programming\project\Debug\jidctred.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jmemmgr.c;D:\studfy\programming\project\Debug\jmemmgr.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jmemnobs.c;D:\studfy\programming\project\Debug\jmemnobs.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jquant1.c;D:\studfy\programming\project\Debug\jquant1.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jquant2.c;D:\studfy\programming\project\Debug\jquant2.obj
+D:\studfy\programming\project\CMUgraphicsLib\jpeg\jutils.c;D:\studfy\programming\project\Debug\jutils.obj
+D:\studfy\programming\project\GUI\Input.cpp;D:\studfy\programming\project\Debug\Input.obj
+D:\studfy\programming\project\GUI\Output.cpp;D:\studfy\programming\project\Debug\Output.obj
+D:\studfy\programming\project\TestCode.cpp;D:\studfy\programming\project\Debug\TestCode.obj

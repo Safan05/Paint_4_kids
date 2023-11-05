@@ -171,6 +171,17 @@ int main()
 		case DRAW_RECT:
 				pOut->PrintMessage("Action: Draw a Rectangle , Click anywhere");
 				break;
+		case Start_Rec:
+			pOut->PrintMessage("Action: Start Recording , Click anywhere");
+			break;
+
+		case Stop_Rec:
+			pOut->PrintMessage("Action: Stop Recording , Click anywhere");
+			break;
+
+		case Play_Rec:
+			pOut->PrintMessage("Action: play Record , Click anywhere");
+			break;
 
 		case Save_graph:
 			pOut->PrintMessage("Action: Save a graph , Click anywhere");
@@ -201,6 +212,7 @@ int main()
 				pOut->PrintMessage("Action: Switch to Play Mode, creating Design tool bar");
 				pOut->CreatePlayToolBar();
 				break;
+
 
 
 		///TODO: Add more cases for the other action types
