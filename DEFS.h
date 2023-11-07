@@ -6,7 +6,16 @@
 //This file contains some global constants and definitions to be used in the project.
 enum ActionType //The actions supported (you can add more if needed)
 {
-	DRAW_RECT,		//Draw Rectangle
+	DRAW_RECT,     //Draw Rectangle
+	DRAW_SQUARE,
+	DRAW_TRI,
+	DRAW_CIRC,
+	DRAW_HEXA,
+	FIGURES,
+	BACK_TO_DRAW,
+	SELECT,
+	DELETE_FIG,
+	CLEAR_ALL,
 	Save_graph,
 	load_graph,
 	EXIT,			//Exit
@@ -24,7 +33,9 @@ enum ActionType //The actions supported (you can add more if needed)
 };
 
 struct Point	//To be used for figures points
-{ int x,y; };
+{
+	int x, y;
+};
 
 struct GfxInfo	//Graphical info of each figure (you may add more members)
 {

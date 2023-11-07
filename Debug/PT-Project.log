@@ -1,7 +1,3 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  Output.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
   TestCode.cpp
-  Input.cpp
-  PT-Project.vcxproj -> D:\studfy\programming\project\Debug\PT Project.exe
+  PT-Project.vcxproj -> D:\Computer department\projectwer\project\Debug\PT Project.exe
