@@ -81,6 +81,30 @@ void Output::CreateFigureToolBar() const
 	pWind->DrawLine(0, UI.ToolBarHeight, UI.width, UI.ToolBarHeight);
 
 }
+void Output::CreatePickToolBar() const
+{
+	UI.InterfaceMode = MODE_PICK;
+
+
+	pWind->SetPen(UI.BkGrndColor, 1);
+	pWind->SetBrush(UI.BkGrndColor);
+	pWind->DrawRectangle(0, 0, UI.width, UI.ToolBarHeight);
+
+	string MenuItemImages[Pick_COUNT];
+	MenuItemImages[ITM_Pick_figure] = "images\\MenuItems\\figure.jpg";
+	MenuItemImages[ITM_Pick_color] = "images\\MenuItems\\color.jpg";
+	MenuItemImages[ITM_Pick_both] = "images\\MenuItems\\both.jpg";
+	MenuItemImages[ITM_Back_play] = "images\\MenuItems\\Menu_Back.jpg";
+	for (int i = 0; i < Pick_COUNT; i++)
+		pWind->DrawImage(MenuItemImages[i], i * UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
+
+
+
+	//Draw a line under the toolbar
+	pWind->SetPen(RED, 3);
+	pWind->DrawLine(0, UI.ToolBarHeight, UI.width, UI.ToolBarHeight);
+
+}
 //////////////////////////////////////////////////////////////////////////////////////////
 void Output::ClearStatusBar() const
 {
@@ -139,7 +163,7 @@ void Output::CreatePlayToolBar() const
 
 	string MenuItemImages[PLAY_ITM_COUNT];
 	MenuItemImages[ITM_Switch_Draw] = "images\\MenuItems\\To_Play.jpg";
-
+	MenuItemImages[ITM_Pick] = "images\\MenuItems\\Pick.jpg";
 
 	for (int i = 0; i < PLAY_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages[i], i * UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);

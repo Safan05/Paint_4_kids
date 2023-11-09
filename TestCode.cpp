@@ -84,6 +84,21 @@ int main()
 	/// 2.2- Square Test ///
 	/// ============== 
 	pOut->PrintMessage("Drawing a Square, normal and Highlighted, Click to continue");
+	pIn->GetPointClicked(x, y);	//Wait for any click
+	//******************************************************
+	pOut->PrintMessage("Drawing a Square ==>non-filled,  Click one point");
+	pIn->GetPointClicked(P1.x, P1.y);
+	gfxInfo.BorderWdth = 6;
+	gfxInfo.DrawClr = BLUE;	//any color for border
+	gfxInfo.FillClr = GREEN;//any color for filling
+	gfxInfo.isFilled = false;//Figure is filled
+	pOut->DrawSQ(P1, gfxInfo, false);
+	//******************************************************
+	pOut->PrintMessage("Drawing a Square ==> Highlighted non-filled, Click to Highlight");
+	pIn->GetPointClicked(x, y);	//Wait for any click
+	pOut->DrawSQ(P1, gfxInfo, true);
+	//******************************************************
+	pOut->PrintMessage("Drawing a Square ==> filled,  Click one point");
 	pIn->GetPointClicked(P1.x, P1.y);
 	gfxInfo.BorderWdth = 6;
 	gfxInfo.DrawClr = BLUE;	//any color for border
@@ -91,10 +106,9 @@ int main()
 	gfxInfo.isFilled = true;//Figure is filled
 	pOut->DrawSQ(P1, gfxInfo, false);
 	//******************************************************
-	pOut->PrintMessage("Drawing a Square ==> Highlighted non-filled, Click to Highlight");
+	pOut->PrintMessage("Drawing a Square ==> Highlighted filled, Click to Highlight");
 	pIn->GetPointClicked(x, y);	//Wait for any click
 	pOut->DrawSQ(P1, gfxInfo, true);
-
 	///TODO: Add code to draw Square, Normal and Highlighted
 
 	pOut->PrintMessage("Drawing a Square Test ==> OK,  Click anywhere to continue");
@@ -179,6 +193,11 @@ int main()
 	pOut->PrintMessage("Drawing a Circle ==> Highlighted filled, Click to Highlight");
 	pIn->GetPointClicked(x, y);	//Wait for any click
 	pOut->DrawCirc(P1, P2, gfxInfo, true);
+	//*******************************************
+	pOut->PrintMessage("Drawing a Circle Test ==> OK,  Click anywhere to continue");
+	pIn->GetPointClicked(x, y);	//Wait for any click
+	pOut->ClearDrawArea();
+
 	/// 2.5- Hexagon Test ///
 	/// =================== 
 	pOut->PrintMessage("Drawing a Hexagon, filled/non-filled and Highlighted filled/non-filled,  Click to continue");
@@ -227,6 +246,19 @@ int main()
 		case FIGURES:
 			pOut->PrintMessage("Action: Shapes , Creating Figure Toolbar");
 			pOut->CreateFigureToolBar();
+			break;
+		case TO_PICK:
+			pOut->PrintMessage("Action: Pick&hide , Creating Pick&hide Toolbar");
+			pOut->CreatePickToolBar();
+			break;
+		case Pick_color:
+			pOut->PrintMessage("Action: Pick&hide by color , Click anywhere");
+			break;
+		case Pick_figure:
+			pOut->PrintMessage("Action: Pick&hide by figure , Click anywhere");
+			break;
+		case Pick_both:
+			pOut->PrintMessage("Action: Pick&hide by both color&figure , Click anywhere");
 			break;
 		case BACK_TO_DRAW:
 			pOut->PrintMessage("Action: Back to Draw , Creating Draw Toolbar");

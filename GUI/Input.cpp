@@ -88,6 +88,38 @@ ActionType Input::GetUserAction() const
 			switch (ClickedItemOrder)
 			{
 			case ITM_Switch_Draw:return TO_DRAW;
+			case ITM_Pick:return TO_PICK;
+			default: return EMPTY;	//A click on empty place in desgin toolbar
+			}
+		}
+
+		//[2] User clicks on the drawing area
+		if (y >= UI.ToolBarHeight && y < UI.height - UI.StatusBarHeight)
+		{
+			return DRAWING_AREA;
+		}
+
+		//[3] User clicks on the status bar
+		return STATUS;
+
+		//return TO_PLAY;	//just for now. This should be updated
+	}
+	else if (UI.InterfaceMode == MODE_PICK) 	//GUI is in Pick mode
+	{
+		if (y >= 0 && y < UI.ToolBarHeight)
+		{
+			//Check whick Menu item was clicked
+			//==> This assumes that menu items are lined up horizontally <==
+			int ClickedItemOrder = (x / UI.MenuItemWidth);
+			//Divide x coord of the point clicked by the menu item width (int division)
+			//if division result is 0 ==> first item is clicked, if 1 ==> 2nd item and so on
+
+			switch (ClickedItemOrder)
+			{
+			case ITM_Pick_color:return Pick_color;
+			case ITM_Pick_figure:return Pick_figure;
+			case ITM_Pick_both:return Pick_both;
+			case ITM_Back_play:return TO_PLAY;
 			default: return EMPTY;	//A click on empty place in desgin toolbar
 			}
 		}
@@ -120,7 +152,6 @@ ActionType Input::GetUserAction() const
 			case ITM_CIRC: return DRAW_CIRC;
 			case ITM_HEXA:return DRAW_HEXA;
 			case ITM_SWITCH:return BACK_TO_DRAW;
-
 			default: return EMPTY;	//A click on empty place in desgin toolbar
 			}
 		}
