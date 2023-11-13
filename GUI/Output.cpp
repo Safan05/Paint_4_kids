@@ -111,7 +111,7 @@ void Output::ClearStatusBar() const
 	//Clear Status bar by drawing a filled white rectangle
 	pWind->SetPen(UI.StatusBarColor, 1);
 	pWind->SetBrush(UI.StatusBarColor);
-	pWind->DrawRectangle(0, UI.height - UI.StatusBarHeight, UI.width, UI.height);
+	pWind->DrawRectangle(0, UI.height-UI.StatusBarHeight, UI.width, UI.height);
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 void Output::CreateDrawToolBar() const
@@ -168,6 +168,7 @@ void Output::CreatePlayToolBar() const
 	ClearToolbar();
 
 	string MenuItemImages[PLAY_ITM_COUNT];
+	MenuItemImages[ITM_EXIT_Play] = "images\\MenuItems\\Menu_Exit.jpg";
 	MenuItemImages[ITM_Switch_Draw] = "images\\MenuItems\\To_Play.jpg";
 	MenuItemImages[ITM_Pick] = "images\\MenuItems\\Pick.jpg";
 
