@@ -100,6 +100,7 @@ ActionType Input::GetUserAction() const
 			{
 			case ITM_Switch_Draw:return TO_DRAW;
 			case ITM_Pick:return TO_PICK;
+			case ITM_EXIT_Play: return EXIT;
 			default: return EMPTY;	//A click on empty place in desgin toolbar
 			}
 		}
