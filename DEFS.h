@@ -30,6 +30,17 @@ enum ActionType //The actions supported (you can add more if needed)
 	Pick_color,
 	Pick_figure,
 	Pick_both,
+	UNDO,
+	REDO,
+	FILLING,
+	DRAWING,
+	BLACK1,
+	YELLOW1,
+	ORANGE1,
+	RED1,
+	GREEN1,
+	BLUE1,
+	MOVE,
 	STATUS			//A click on the status bar
 
 	///TODO: Add the other action types of the two modes

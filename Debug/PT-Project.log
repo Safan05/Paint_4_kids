@@ -1,4 +1,16 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
   Output.cpp
-D:\Computer department\projectwer\project\GUI\Output.cpp(289,10): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Computer department\projectwer\project\GUI\Output.cpp(4,1): warning C4005: 'min': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(197,1): message : see previous definition of 'min'
+D:\Computer department\projectwer\project\GUI\Output.cpp(5,1): warning C4005: 'max': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(193,1): message : see previous definition of 'max'
+D:\Computer department\projectwer\project\GUI\Output.cpp(328,22): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\Computer department\projectwer\project\GUI\Output.cpp(328,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Computer department\projectwer\project\GUI\Output.cpp(328,42): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\Computer department\projectwer\project\GUI\Output.cpp(328,42): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Computer department\projectwer\project\GUI\Output.cpp(328,53): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\Computer department\projectwer\project\GUI\Output.cpp(328,53): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Computer department\projectwer\project\GUI\Output.cpp(328,76): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\Computer department\projectwer\project\GUI\Output.cpp(328,76): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Computer department\projectwer\project\GUI\Output.cpp(344,10): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   PT-Project.vcxproj -> D:\Computer department\projectwer\project\Debug\PT Project.exe

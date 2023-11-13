@@ -1,17 +1,19 @@
 #include "Output.h"
 #include "cmath"
 #include"UI_Info.h"
+#define min(a,b) ((a) < (b) ? (a) : (b))
+#define max(a,b) ((a) > (b) ? (a) : (b))
 Output::Output()
 {
 	//Initialize user interface parameters
 	UI.InterfaceMode = MODE_DRAW;
-	UI.width = 1250;
-	UI.height = 650;
+	UI.width = 1400;
+	UI.height = 700;
 	UI.wx = 5;
 	UI.wy = 5;
 	UI.StatusBarHeight = 50;
 	UI.ToolBarHeight = 50;
-	UI.MenuItemWidth = 80;
+	UI.MenuItemWidth = 60;
 	UI.DrawColor = BLUE;	//Drawing color
 	UI.FillColor = GREEN;	//Filling color
 	UI.MsgColor = RED;		//Messages color
@@ -58,11 +60,7 @@ void Output::CreateFigureToolBar() const
 {
 	UI.InterfaceMode = MODE_FIGURES;
 
-
-	pWind->SetPen(UI.BkGrndColor, 1);
-	pWind->SetBrush(UI.BkGrndColor);
-	pWind->DrawRectangle(0, 0, UI.width, UI.ToolBarHeight);
-
+	ClearToolbar();
 	string MenuItemImages[FIGURE_COUNT];
 	MenuItemImages[ITM_RECT] = "images\\MenuItems\\Menu_Rect.jpg";
 	MenuItemImages[ITM_SQUARE] = "images\\MenuItems\\Menu_Square.jpg";
@@ -84,12 +82,7 @@ void Output::CreateFigureToolBar() const
 void Output::CreatePickToolBar() const
 {
 	UI.InterfaceMode = MODE_PICK;
-
-
-	pWind->SetPen(UI.BkGrndColor, 1);
-	pWind->SetBrush(UI.BkGrndColor);
-	pWind->DrawRectangle(0, 0, UI.width, UI.ToolBarHeight);
-
+	ClearToolbar();
 	string MenuItemImages[Pick_COUNT];
 	MenuItemImages[ITM_Pick_figure] = "images\\MenuItems\\figure.jpg";
 	MenuItemImages[ITM_Pick_color] = "images\\MenuItems\\color.jpg";
@@ -106,6 +99,13 @@ void Output::CreatePickToolBar() const
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////
+void Output::ClearToolbar() const
+{
+	//Clear Status bar by drawing a filled white rectangle
+	pWind->SetPen(UI.BkGrndColor, 1);
+	pWind->SetBrush(UI.BkGrndColor);
+	pWind->DrawRectangle(0, 0, UI.width, UI.ToolBarHeight);
+}
 void Output::ClearStatusBar() const
 {
 	//Clear Status bar by drawing a filled white rectangle
@@ -117,7 +117,7 @@ void Output::ClearStatusBar() const
 void Output::CreateDrawToolBar() const
 {
 	UI.InterfaceMode = MODE_DRAW;
-
+	ClearToolbar();
 	//You can draw the tool bar icons in any way you want.
 	//Below is one possible way
 
@@ -136,7 +136,17 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_StopRecording] = "images\\MenuItems\\Stop_Recording.jpg";
 	MenuItemImages[ITM_PlayRecord] = "images\\MenuItems\\Play_Record.jpg";
 	MenuItemImages[ITM_Switch_Play] = "images\\MenuItems\\To_Play.jpg";
-
+	MenuItemImages[ITM_UNDO] = "images\\MenuItems\\Menu_Undo.jpeg";
+	MenuItemImages[ITM_REDO] = "images\\MenuItems\\Menu_Redo.jpeg";
+	MenuItemImages[ITM_FILLING] = "images\\MenuItems\\Menu_Fill.jpeg";
+	MenuItemImages[ITM_DRAWING] = "images\\MenuItems\\Menu_Draw.jpeg";
+	MenuItemImages[ITM_BLACK1] = "images\\MenuItems\\Menu_Black.jpeg";
+	MenuItemImages[ITM_YELLOW1] = "images\\MenuItems\\Menu_Yellow.jpeg";
+	MenuItemImages[ITM_ORANGE1] = "images\\MenuItems\\Menu_Orange.jpeg";
+	MenuItemImages[ITM_RED1] = "images\\MenuItems\\Menu_Red.jpeg";
+	MenuItemImages[ITM_GREEN1] = "images\\MenuItems\\Menu_Green.jpeg";
+	MenuItemImages[ITM_BLUE1] = "images\\MenuItems\\Menu_Blue.jpeg";
+	MenuItemImages[ITM_MOVE] = "images\\MenuItems\\Menu_Move.jpeg";
 	//Draw menu item one image at a time
 	for (int i = 0; i < DRAW_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages[i], i * UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
@@ -155,11 +165,7 @@ void Output::CreatePlayToolBar() const
 	UI.InterfaceMode = MODE_PLAY;
 	///TODO: write code to create Play mode menu
 
-
-	pWind->SetPen(UI.BkGrndColor, 1);
-	pWind->SetBrush(UI.BkGrndColor);
-	pWind->DrawRectangle(0, 0, UI.width, UI.ToolBarHeight);
-
+	ClearToolbar();
 
 	string MenuItemImages[PLAY_ITM_COUNT];
 	MenuItemImages[ITM_Switch_Draw] = "images\\MenuItems\\To_Play.jpg";
@@ -236,6 +242,13 @@ void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) co
 
 
 	pWind->DrawRectangle(P1.x, P1.y, P2.x, P2.y, style);
+	if ((min(P1.y,P2.y) - UI.ToolBarHeight) < abs(P1.y-P2.y)) {
+		ClearToolbar();
+		if (UI.InterfaceMode == MODE_DRAW)
+			CreateDrawToolBar();
+		else
+			CreateFigureToolBar();
+	}
 
 }
 void Output::DrawSQ(Point P1, GfxInfo RectGfxInfo, bool selected) const
@@ -257,6 +270,13 @@ void Output::DrawSQ(Point P1, GfxInfo RectGfxInfo, bool selected) const
 		style = FRAME;
 
 	pWind->DrawRectangle(P1.x - 50, P1.y - 50, P1.x + 50, P1.y + 50, style);
+	if ((P1.y + 50 - UI.ToolBarHeight) < 100){
+		ClearToolbar();
+		if (UI.InterfaceMode == MODE_DRAW)
+			CreateDrawToolBar();
+		else
+			CreateFigureToolBar();
+	}
 }
 
 
@@ -279,8 +299,43 @@ void Output::DrawTri(Point P1, Point P2, Point P3, GfxInfo TriGfxInfo, bool sele
 		style = FRAME;
 
 	pWind->DrawTriangle(P1.x, P1.y, P2.x, P2.y, P3.x, P3.y, style);
+	if ((min(min(P1.y,P2.y),P3.y) - UI.ToolBarHeight) < (max(max(P1.y, P2.y), P3.y)- (min(min(P1.y, P2.y), P3.y)))) {
+		ClearToolbar();
+		if (UI.InterfaceMode == MODE_DRAW)
+			CreateDrawToolBar();
+		else
+			CreateFigureToolBar();
+	}
 }
+void Output::Drawhexa(Point P1, GfxInfo RectGfxInfo, bool selected) const
+{
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
+	else
+		DrawingClr = RectGfxInfo.DrawClr;
 
+	pWind->SetPen(DrawingClr, 1);
+	drawstyle style;
+	if (RectGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(RectGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+	int arrX[6] = { P1.x +25 , P1.x + 50 , P1.x + 25 ,P1.x - 25, P1.x - 50 , P1.x - 25 };
+	int arrY[6] = { P1.y+43.3, P1.y  , P1.y -43.3, P1.y-43.3  ,  P1.y  , P1.y + 43.3 };
+
+	pWind->DrawPolygon(arrX, arrY, 6, style);
+	if ((P1.y + 43.3 - UI.ToolBarHeight) < 86.6) {
+		ClearToolbar();
+		if (UI.InterfaceMode == MODE_DRAW)
+			CreateDrawToolBar();
+		else
+			CreateFigureToolBar();
+	}
+}
 void Output::DrawCirc(Point P1, Point P2, GfxInfo CircGfxInfo, bool selected) const
 {
 	int a, b, r;
@@ -303,8 +358,14 @@ void Output::DrawCirc(Point P1, Point P2, GfxInfo CircGfxInfo, bool selected) co
 	else
 		style = FRAME;
 
-
 	pWind->DrawCircle(P1.x, P1.y, r, style);
+	if (r > (P1.y - UI.ToolBarHeight)) {
+		ClearToolbar();
+		if (UI.InterfaceMode == MODE_DRAW)
+			CreateDrawToolBar();
+		else
+			CreateFigureToolBar();
+	}
 }
 
 

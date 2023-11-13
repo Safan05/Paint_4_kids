@@ -20,6 +20,17 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	//Note: Items are **(ordered)** here as they appear in menu
 	//If you want to change the menu items order, change the order here
 	ITM_FIGURES,
+	ITM_UNDO,
+	ITM_REDO,
+	ITM_FILLING,
+	ITM_DRAWING,
+	ITM_BLACK1,
+	ITM_YELLOW1,
+	ITM_ORANGE1,
+	ITM_RED1,
+	ITM_GREEN1,
+	ITM_BLUE1,
+	ITM_MOVE,
 	ITM_SELECT,
 	ITM_DELETE,
 	ITM_CLEAR,

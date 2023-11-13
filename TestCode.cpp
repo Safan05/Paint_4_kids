@@ -202,8 +202,43 @@ int main()
 	/// =================== 
 	pOut->PrintMessage("Drawing a Hexagon, filled/non-filled and Highlighted filled/non-filled,  Click to continue");
 	pIn->GetPointClicked(x, y);	//Wait for any click
+	///////////////////////
+	/// ===================================================================================================================================
 
-	///TODO: Add code to draw Hexagon in all possible states
+	//.1.1 - Drawing non-filled Hexagon
+	pOut->PrintMessage("Drawing a Hexagon ==> non-filled,  Click one point");
+	pIn->GetPointClicked(P1.x, P1.y);
+
+
+	gfxInfo.BorderWdth = 5;
+	gfxInfo.DrawClr = BLACK;	//any color for border
+	gfxInfo.isFilled = false;	//Figure is NOT filled
+	pOut->Drawhexa(P1, gfxInfo, false);
+
+	// 2.1.2 - Drawing highlighted non-filled hexagon
+	pOut->PrintMessage("Drawing a Hexagon ==> Highlighted non-filled, Click to Highlight");
+	pIn->GetPointClicked(x, y);	//Wait for any click
+	pOut->Drawhexa(P1, gfxInfo, true);
+
+
+	// 2.1.3 - Drawing a filled hexagon
+	pOut->PrintMessage("Drawing a Hexagon ==> filled,  Click one point");
+	pIn->GetPointClicked(P1.x, P1.y);
+
+
+	gfxInfo.BorderWdth = 6;
+	gfxInfo.DrawClr = BLUE;	//any color for border
+	gfxInfo.FillClr = GREEN;//any color for filling
+	gfxInfo.isFilled = true;//Figure is filled
+	pOut->Drawhexa(P1, gfxInfo, false);
+
+
+	// 2.1.4 - Drawing a highlighted filled hexagon
+	pOut->PrintMessage("Drawing a Hexagon ==> Highlighted filled, Click to Highlight");
+	pIn->GetPointClicked(x, y);	//Wait for any click
+	pOut->Drawhexa(P1, gfxInfo, true);
+
+
 
 	pOut->PrintMessage("Drawing a Hexagon Test ==> OK,  Click anywhere to continue");
 	pIn->GetPointClicked(x, y);	//Wait for any click
@@ -217,7 +252,7 @@ int main()
 	pOut->PrintMessage("TEST3: Now Time to test class Input, Click anywhere to continue");
 	pIn->GetPointClicked(x, y);	//Wait for any click
 	pOut->PrintMessage("Testing Input ability to read strings");
-
+	pIn->GetSrting(pOut);
 	///TODO: Add code here to 
 	// 1- Read a string from the user on the status bar
 	// 2- After reading the string clear the status bar
@@ -253,6 +288,39 @@ int main()
 			break;
 		case Pick_color:
 			pOut->PrintMessage("Action: Pick&hide by color , Click anywhere");
+			break;
+		case UNDO:
+			pOut->PrintMessage("Action: undo , Click anywhere");
+			break;
+		case REDO:
+			pOut->PrintMessage("Action: redo , Click anywhere");
+			break;
+		case FILLING:
+			pOut->PrintMessage("Action: Filling Color icon , Click anywhere");
+			break;
+		case DRAWING:
+			pOut->PrintMessage("Action: Drawing Color icon , Click anywhere");
+			break;
+		case BLACK1:
+			pOut->PrintMessage("Action: Black color icon , Click anywhere");
+			break;
+		case YELLOW1:
+			pOut->PrintMessage("Action: Yellow color icon , Click anywhere");
+			break;
+		case ORANGE1:
+			pOut->PrintMessage("Action: Orange color icon , Click anywhere");
+			break;
+		case RED1:
+			pOut->PrintMessage("Action: Red color icon , Click anywhere");
+			break;
+		case GREEN1:
+			pOut->PrintMessage("Action: Green color icon , Click anywhere");
+			break;
+		case BLUE1:
+			pOut->PrintMessage("Action: Blue color icon , Click anywhere");
+			break;
+		case MOVE:
+			pOut->PrintMessage("Action: Move figure icon , Click anywhere");
 			break;
 		case Pick_figure:
 			pOut->PrintMessage("Action: Pick&hide by figure , Click anywhere");

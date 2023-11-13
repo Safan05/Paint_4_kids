@@ -62,6 +62,17 @@ ActionType Input::GetUserAction() const
 			case ITM_EXIT: return EXIT;
 			case ITM_SAVEGRAPH: return Save_graph;
 			case ITM_LOADGRAPH: return load_graph;
+			case ITM_UNDO:  return UNDO;
+			case ITM_REDO:  return REDO;
+			case ITM_FILLING:  return FILLING;
+			case ITM_DRAWING:  return DRAWING;
+			case ITM_BLACK1:  return BLACK1;
+			case ITM_YELLOW1:  return YELLOW1;
+			case ITM_ORANGE1:  return ORANGE1;
+			case ITM_RED1:   return RED1;
+			case ITM_GREEN1:  return GREEN1;
+			case ITM_BLUE1:   return BLUE1;
+			case ITM_MOVE:  return MOVE;
 			default: return EMPTY;	//A click on empty place in desgin toolbar
 			}
 		}
